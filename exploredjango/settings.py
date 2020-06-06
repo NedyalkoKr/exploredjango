@@ -32,6 +32,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    'accounts.apps.AccountsConfig',
     'tagging.apps.TaggingConfig',
 ]
 
@@ -123,3 +124,5 @@ SERIALIZATION_MODULES = {
     'python': 'tagulous.serializers.python',
     'yaml':   'tagulous.serializers.pyyaml',
 }
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
